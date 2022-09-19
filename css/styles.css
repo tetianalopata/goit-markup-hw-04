@@ -1,0 +1,379 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-white: #FFFFFF;
+    --primary-black: #000000;
+    --deep-background-color: #2F303A;
+    --light-background-color: #F5F4FA;
+    --transparent-white: #FFFFFF99;
+    --grey-outline-color: #ECECEC;
+
+    --card-set-gap: 30px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-text-color);
+}
+
+h1,h2,h3,p,ul,li {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px; 
+}
+
+.section {
+    padding: 94px 0px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    
+    color: inherit;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color)
+}
+
+.current {
+    color: var(--accent-color)
+}
+
+.section-heading {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* header */
+
+header {
+    border-bottom: 1px solid var(--grey-outline-color);
+}
+
+.header {
+    padding: 0px 15px;
+}
+
+.header,
+.site-nav,
+.nav-options,
+.contacts {
+    display: flex;
+}
+
+.header,
+.site-nav {
+    align-items: center;
+}
+
+.site-nav {
+    margin-right: auto;
+}
+
+/* logo */
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+}
+
+.site-nav .logo {
+    margin-right: 93px;
+
+    color: var(--primary-black)
+}
+
+.footer .logo {
+    display: block;
+    color: var(--primary-white);
+    margin-bottom: 20px;
+}
+
+.logo-prefix {
+    color: var(--accent-color);
+}
+
+/* nav-items, header contacts */
+
+.nav-item,
+.header-contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+}
+
+.nav-item .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-item:not(:last-child),
+.header-contact:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contact {
+    color: var(--secondary-text-color)
+}
+
+/* hero */
+
+.hero {
+    padding: 200px 0px;
+
+    background-color: var(--deep-background-color);
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.hero-heading {
+    margin: auto;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 696px;
+
+    color: var(--primary-white);
+}
+
+.hero-button {
+    padding: 10px 32px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-white);
+    background-color: var(--accent-color);
+}
+
+/* advantages */
+
+.advantages {
+    padding-bottom: 0px;
+}
+
+.advantages .list {
+    display: flex;
+}
+
+.advantages .item {
+    width: 270px;
+}
+
+.advantages .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advantages-heading {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.advantages-text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+
+    color: var(--secondary-text-color);
+}
+
+/* what we do */ 
+
+.what-we-do .list {
+    display: flex;
+}
+
+.what-we-do .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* team */
+
+.team {
+    background-color: var(--light-background-color);
+}
+
+.team .list {
+    display: flex;
+}
+
+.team-card {
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--primary-white);
+}
+
+.team-card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.card-info {
+    padding: 30px 0px;
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    margin-bottom: 10px;
+}
+
+.team-position {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+
+    color: var(--secondary-text-color);
+}
+
+/* projects */
+
+/* filters */
+
+.filter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.filter .item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filter-option {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    padding: 6px 22px;
+    min-width: 73px;
+
+    color: var(--primary-text-color);
+    background-color: var(--light-background-color);
+}
+
+.filter-option:hover,
+.filter-option:focus {
+    color: var(--primary-white);
+    background-color: var(--accent-color);
+}
+
+/* project cards */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.projects .item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+}
+
+.card-content {
+    padding: 24px 20px;
+    border: 1px solid var(--grey-outline-color);
+    border-top: 0px;
+}
+
+.project-name {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+
+    letter-spacing: 0.06em;
+}
+
+.project-type {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    color: var(--secondary-text-color);
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--deep-background-color);
+    padding: 60px 0px;
+}
+
+.address {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    font-style: normal;
+}
+
+.address .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-map {
+    color: var(--primary-white);
+}
+
+.footer-contact {
+    list-style: none;
+
+    color: var(--transparent-white);
+}
